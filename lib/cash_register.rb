@@ -15,7 +15,9 @@ class CashRegister
     end
     self.last_transaction = price * quantity
   end
+  
   binding.pry
+  
   def apply_discount
    # binding.pry
     if discount != 0
