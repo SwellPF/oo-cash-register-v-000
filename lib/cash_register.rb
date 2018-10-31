@@ -15,9 +15,9 @@ class CashRegister
     end
     self.last_transaction = price * quantity
   end
-  
+  binding.pry
   def apply_discount
-    binding.pry
+   # binding.pry
     if discount != 0
       self.total = (total * (100 - discount.to_f)/100).to_i)
        "After the discount, the total comes to $#{self.total}."
